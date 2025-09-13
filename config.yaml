@@ -1,0 +1,8 @@
+staging_directory: C:/Users/HP/OneDrive/Documents/staging
+target_directories:
+  png: C:/Users/HP/OneDrive/Documents/staging/Pictures
+  jpeg: C:\Users\HP\OneDrive\Documents\staging\Pictures\JPEGs
+  pdf: C:\Users\HP\OneDrive\Documents\staging\Documents\PDFs
+  mp3: C:\Users\HP\OneDrive\Documents\staging\Music\MP3s
+  plain: C:/Users/HP/OneDrive/Documents/staging/Documents/TextFiles
+log_file: /var/log/file-sorter.log
