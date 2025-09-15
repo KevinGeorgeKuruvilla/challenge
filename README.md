@@ -59,7 +59,9 @@ Installation
 Clone the repository:
 
 _git clone https://github.com/KevinGeorgeKuruvilla/challenge.git_
+
 _cd challenge_
+
 Create and activate a virtual environment:
 
 ### On Windows:
@@ -67,7 +69,8 @@ Create and activate a virtual environment:
 python -m venv venv
 .\venv\Scripts\activate
 
-On macOS/Linux:
+### On macOS/Linux:
+
 python3 -m venv venv
 source venv/bin/activate
 
@@ -85,7 +88,7 @@ Before running the application, you must set up your directories in the config.y
 
 Create the necessary folders on your computer for the staging area and the target locations.
 
-Edit the config.yaml file with the correct paths.
+### Edit the config.yaml file with the correct paths.
 
 Here is an example configuration:
 
