@@ -88,19 +88,18 @@ Create the necessary folders on your computer for the staging area and the targe
 Edit the config.yaml file with the correct paths.
 
 Here is an example configuration:
-YAML
 
-- The "hot folder" that the application will monitor.\*
+The "hot folder" that the application will monitor.
 
-staging_directory: "C:/Users/YourUser/Desktop/Staging"
+_staging_directory: "C:/Users/YourUser/Desktop/Staging"_
 
-- The destination folders for each file type.\*
+The destination folders for each file type.
 
 target_directories:  
 png: "C:/Users/YourUser/Pictures/PNGs"  
 jpeg: "C:/Users/YourUser/Pictures/JPEGs"  
-pdf: "C:/Users/YourUser/Documents/PDFs"
-mp3: "C:/Users/YourUser/Music/MP3s"
+pdf: "C:/Users/YourUser/Documents/PDFs"  
+mp3: "C:/Users/YourUser/Music/MP3s"  
 plain: "C:/Users/YourUser/Documents/TextFiles"
 
 Note for Windows users: Use forward slashes (/) or double backslashes (\\) in your paths.
@@ -109,13 +108,12 @@ Note for Windows users: Use forward slashes (/) or double backslashes (\\) in yo
 
 To run the application, simply execute the gui_app.py script from the root of the project directory:
 
-Bash
-
 _python gui_app.py_
+
 The graphical user interface will appear. From there, you can:
 
-_Click "Start Service" to begin monitoring the staging directory._
+1._Click "Start Service" to begin monitoring the staging directory._
 
-_Modify the directory paths and click "Save Configuration"._
+2._Modify the directory paths and click "Save Configuration"._
 
-_Click "Stop Service" to pause the monitoring._
+3._Click "Stop Service" to pause the monitoring._
