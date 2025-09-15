@@ -58,37 +58,28 @@ For python-magic on Windows, you may need to install magic binaries. On Linux/ma
 Installation
 Clone the repository:
 
-Bash
-
-git clone https://github.com/KevinGeorgeKuruvilla/challenge.git
-cd challenge
+_git clone https://github.com/KevinGeorgeKuruvilla/challenge.git_
+_cd challenge_
 Create and activate a virtual environment:
 
-On Windows:
-
-Bash
+### On Windows:
 
 python -m venv venv
 .\venv\Scripts\activate
+
 On macOS/Linux:
-
-Bash
-
 python3 -m venv venv
 source venv/bin/activate
 
 Install dependencies
-Bash
 
-pip install -r requirements.txt
+_pip install -r requirements.txt_
 
 Install the required packages:
 
-Bash
+_pip install -r requirements.txt_
 
-pip install -r requirements.txt
-
-- Configuration\*
+## Configuration
 
 Before running the application, you must set up your directories in the config.yaml file.
 
@@ -105,25 +96,26 @@ staging_directory: "C:/Users/YourUser/Desktop/Staging"
 
 - The destination folders for each file type.\*
 
-target_directories:
-png: "C:/Users/YourUser/Pictures/PNGs"
-jpeg: "C:/Users/YourUser/Pictures/JPEGs"
+target_directories:  
+png: "C:/Users/YourUser/Pictures/PNGs"  
+jpeg: "C:/Users/YourUser/Pictures/JPEGs"  
 pdf: "C:/Users/YourUser/Documents/PDFs"
 mp3: "C:/Users/YourUser/Music/MP3s"
 plain: "C:/Users/YourUser/Documents/TextFiles"
 
 Note for Windows users: Use forward slashes (/) or double backslashes (\\) in your paths.
 
-#▶️ Usage
+# ▶️Usage
+
 To run the application, simply execute the gui_app.py script from the root of the project directory:
 
 Bash
 
-python gui_app.py
+_python gui_app.py_
 The graphical user interface will appear. From there, you can:
 
-Click "Start Service" to begin monitoring the staging directory.
+_Click "Start Service" to begin monitoring the staging directory._
 
-Modify the directory paths and click "Save Configuration".
+_Modify the directory paths and click "Save Configuration"._
 
-Click "Stop Service" to pause the monitoring.
+_Click "Stop Service" to pause the monitoring._
