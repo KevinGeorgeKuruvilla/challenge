@@ -1,4 +1,4 @@
-staging_directory: C:/Users/HP/OneDrive/Documents/staging
+staging_directory: C:/Users/HP/Music/Staging
 target_directories:
   png: C:/Users/HP/OneDrive/Documents/staging/Pictures
   jpeg: C:\Users\HP\OneDrive\Documents\staging\Pictures\JPEGs

@@ -1,4 +1,4 @@
-import os
+# import os
 import magic
 import shutil
 import uuid
@@ -11,20 +11,20 @@ def process_file(file_path, target_dirs):
     
     for i in range(10):
         try:
-            # 1. Identify file type-python magic
+            # 1. 
             mime_type = magic.from_file(file_path, mime=True)
             file_type = mime_type.split('/')[-1]
 
-            # 2. Check if we have a target directory for this type
+            # 2. 
             if file_type in target_dirs:
                 target_dir = Path(target_dirs[file_type])
                 target_dir.mkdir(parents=True, exist_ok=True)
                 
-                # 3. Create a new, unique filename
+                # 3. 
                 new_filename = f"{uuid.uuid4()}.{file_type}"
                 destination_path = target_dir / new_filename
                 
-                # 4. Move and rename the file
+                # 4.
                 shutil.move(file_path, destination_path)
                 print(f"✅ Moved {file_path} -> {destination_path}")
             else:

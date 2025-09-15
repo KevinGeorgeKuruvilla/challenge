@@ -15,8 +15,6 @@ def start(config):
         with open(config, 'r') as f:
             config_data = yaml.safe_load(f)
         
-        # You should add validation here to ensure all keys exist
-        
         start_watching(config_data)
     except FileNotFoundError:
         click.echo(f"Error: Configuration file not found at '{config}'")

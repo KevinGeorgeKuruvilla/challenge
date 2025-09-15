@@ -71,7 +71,7 @@ class App(ctk.CTk):
                 entry.delete(0, "end")
                 entry.insert(0, folder_path)
                 
-        browse_button = ctk.CTkButton(frame, text="...", width=30, command=browse_folder)
+        browse_button = ctk.CTkButton(frame, text="Edit", width=30, command=browse_folder)
         browse_button.pack(side="left")
         
         return entry
@@ -111,7 +111,7 @@ class App(ctk.CTk):
         with open(self.config_file_path, 'w') as f:
             yaml.dump(config, f, sort_keys=False)
         
-        # Optional: Add a label to show save confirmation
+        
         print("✅ Configuration saved!")
 
 
