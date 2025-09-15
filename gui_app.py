@@ -117,7 +117,7 @@ class App(ctk.CTk):
 
     def start_service(self):
         """Starts the file watcher in a background thread."""
-        # Implementation is the same as before...
+       
         if self.watcher_thread is None or not self.watcher_thread.is_alive():
             print("Starting service...")
             self.stop_event.clear()
@@ -138,7 +138,7 @@ class App(ctk.CTk):
             
     def stop_service(self):
         """Stops the file watcher thread."""
-        # Implementation is the same as before...
+       
         if self.watcher_thread and self.watcher_thread.is_alive():
             print("Stopping service...")
             self.stop_event.set()

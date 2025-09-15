@@ -10,7 +10,7 @@ def cli():
 @cli.command()
 @click.option('--config', default='config.yaml', help='Path to the configuration file.')
 def start(config):
-    """Starts the file sorting service."""
+    
     try:
         with open(config, 'r') as f:
             config_data = yaml.safe_load(f)
